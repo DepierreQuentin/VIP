@@ -1,0 +1,23 @@
+{{> menuPhotos}}
+
+<div class="adminVips">
+  <fieldset>
+       <legend><strong>Ajout d'une photo</strong></legend>
+       <form action="/Photos/AjouterPhoto" method="post">
+             <label>Sélectionnez un vip :</label> <select name="vip">
+                 <option value="0">Vips</option>
+                 {{#each vips}}
+                    <option value="{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</option>
+                 {{/each}}
+             </select>
+             </br> </br>
+             <label>Sélectionner une image :</label>  <input type="file"  name="photo">
+             </br> </br>
+             <label> Titre :</label>  <input type="text" name="photo_sujet">
+             </br> </br>
+             <label> Commentaire de la photo :</label>  <textarea name="photo_commentaire" rows="8" cols="80"></textarea>
+             </br> </br>
+             <button type="submit" name="valider">Valider</button>
+         </form>
+  </fieldset>
+</div>

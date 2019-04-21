@@ -1,0 +1,42 @@
+{{> menuVips}}
+
+<div class="adminVips">
+  <fieldset>
+       <legend><strong>Modifier VIPs</strong></legend>
+       <form action="/Vips/ModifierVip" method="post">
+         <label>Séléctionnez un vip :</label> <select name="vip">
+           <option value="0">Vips</option>
+           {{#each vips}}
+              <option value="{{this.VIP_NUMERO}}">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</option>
+           {{/each}}
+         </select>
+         </br> </br>
+         <label>Nom* :</label> <input required type="text" name="nom">
+         </br> </br>
+         <label>Prénom* :</label> <input required type="text" name="prenom">
+         </br> </br>
+         <label>Sexe :</label> <select name="sexe">
+           <option value="M">Masculin</option>
+           <option value="F">Feminin</option>
+         </select>
+         </br> </br>
+         <label>Date de naissance :</label> <input type="date" name="dateNaissance">
+         </br> </br>
+         <label>Nationalité :</label> <select name="nationalite">
+           {{#each nationalites}}
+              <option value="{{this.NATIONALITE_NUMERO}}">{{this.NATIONALITE_NOM}}</option>
+           {{/each}}
+         </select>
+         </br> </br>
+         <label>Commentaire :</label> <textarea name="commentaire" rows="8" cols="80"></textarea>
+         </br> </br>
+         <label>Sélectionner une image :</label> <input type="file"  name="photo">
+         </br> </br>
+         <label>Sujet de la photo :</label> <input type="text" name="photo_sujet">
+         </br> </br>
+         <label>Commentaire de la photo :</label> <textarea name="photo_commentaire" rows="8" cols="80"></textarea>
+         </br> </br>
+         <button type="submit" name="valider">Valider</button>
+       </form>
+  </fieldset>
+</div>

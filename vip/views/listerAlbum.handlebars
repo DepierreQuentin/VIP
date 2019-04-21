@@ -1,0 +1,19 @@
+{{> listePhoto}}
+
+<div id="easyPaginatePhoto" class="divGlobComm">
+    {{#each vipPhoto}}
+        <div>
+            <p id="comm">{{this.VIP_PRENOM}} {{this.VIP_NOM}}</p>
+            <a href="/images/vip/{{this.PHOTO_ADRESSE}}" data-lightbox="set" data-title="{{this.PHOTO_COMMENTAIRE}}" >
+              <img id="comm" src="/images/vip/{{this.PHOTO_ADRESSE}}" style="max-width:80%; max-height:200px; "  alt="/images/vip/{{this.PHOTO_ADRESSE}}"></a>
+            <fieldset class="fieldset">
+                <legend>Commentaire</legend>
+                {{#ifCond this.PHOTO_COMMENTAIRE '!=' null}}
+                    <p id="comm">{{this.PHOTO_COMMENTAIRE}}</p>
+                {{else}}
+                    <p id="comm">Cette photo ne possède pas de commentaire</p>
+                {{/ifCond}}
+            </fieldset>
+        </div>
+    {{/each}}
+</div>

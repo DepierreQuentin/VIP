@@ -1,0 +1,11 @@
+{{> listeLettre}}
+
+<div class="contenu_page">
+  <p>
+    {{#each preview}}
+    <div class="alignPhoto"><img id="photoRep" src="/images/vip/{{this.photo_adress}}" alt="{{this.photo_adress}}">
+    <p><a href="/repertoire/vip/{{this.vipnum}}">{{this.vip_prenom}} {{this.vip_nom}}</a></p>
+    </div>
+    {{/each}}
+  </p>
+</div>

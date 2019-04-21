@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="/css/etoile.ico" sizes="16x16"/>
+        <link rel="stylesheet" href="/css/structure.css" />
+        <title> {{title}}</title>
+    </head>
+    <body class="monBody">
+        <div id="container">
+            <div id="header">
+                <div class="baniere"><img src="/images/sixvoix.png" alt="SIXVOIX l'encyclopédie des stars" /> </div>
+            </div>
+            <div class="menu_haut">
+              {{#unless session.login}}
+                <a class="connexionBtn" href="/Connexion"><strong><i>Se connecter</i></strong></a>
+                <ul>
+                  <li class="traitVertical"><a href="/Connexion">VIPS</a></li>
+                  <li class="traitVertical"><a href="/Connexion">PHOTOS</a></li>
+                </ul>
+              {{else}}
+                <a class="connexionBtn" href="/Deconnexion">Bonjour {{session.login}}  <strong><i>Déconnexion</i></strong></a>
+                <ul>
+                  <li class="traitVertical"><a href="/Vips">VIPS</a></li>
+                  <li class="traitVertical"><a href="/Photos">PHOTOS</a></li>
+                </ul>
+              {{/unless}}
+            </div>
+            <div id="contenu">
+                <br/>
+                <br/>
+                {{{body}}}
+            </div>
+            <div id="footer">
+                L'encyclopédie des stars depuis février 2017 (en NodeJS)
+                <br />
+                © IUT du Limousin DUT Informatique année 2
+                <br />
+                Application réalisée par Quentin Depierre
+                <br />
+                <img src="/images/nodejs.png" id= "LogoNode" alt="Logo NodeJs" title="Logo Node.JS" />
+            </div>
+        </div>
+        <script src="/js/jquery.js"></script>
+    </body>
+</html>

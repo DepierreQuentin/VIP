@@ -1,0 +1,303 @@
+body {
+    font-family: "Segoe UI", "DejaVu Sans",Verdana, sans-serif;
+    background-image:-webkit-linear-gradient(#9f0909, #4e0000);
+    background-image:-o-linear-gradient(#9f0909, #4e0000);
+    background-image:linear-gradient(#9f0909, #4e0000);
+    background-size: 1rem 200rem;
+    font-size:0.8em;
+    margin: 0;
+    padding: 0;
+    /*text-align: center;*/
+    color: #000000;
+}
+.monBody #container {
+    width: 1300px;
+    margin: 0 auto;
+    background:#ffffff;
+}
+.monBody #header {
+    height:140px;
+    background-color:#000;
+    color:#fff;
+}
+
+.menu_haut {background-color:#000;color:#fff;margin-top:-13px;width:100%;}
+.menu_haut ul {
+	width:100%;
+	text-align:center;
+	height:30px;
+	margin-left:-50px;
+	margin-right:-50px;
+	}
+.menu_haut li {
+	text-decoration:none;
+	font-weight:bold;
+	display:inline;
+	font-size:14px;
+	padding:10px 10px 10px 10px;
+	color:#fff;
+	}
+.menu_haut li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline;
+	height: 100%;
+	border: 0 none;
+}
+.menu_haut li a:hover {
+	color:#000;
+	background:#eee;
+}
+
+.monBody #contenu {
+    padding:20px;
+    overflow: auto;
+}
+.monBody #footer {
+    padding: 0 10px;
+    font-size:0.8em;
+    text-align:center;
+    height:150px;
+    background:url(/image/footer.jpg) no-repeat;
+}
+.baniere{float:left;
+  margin-top:20px;
+  margin-left:5px;
+  border:none;}
+.baniere img{
+  border:none;
+}
+
+#LogoNode {
+    max-height: 20%;
+    max-width: 20%;
+}
+
+a  {
+    text-decoration:none;
+    color:#0072ff;
+}
+
+.traitVertical {
+  border-left: 1px white solid;
+}
+
+.contenu_page{
+    text-align: center;
+}
+.alignPhoto {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#photoRep{
+    height: 180px;
+}
+
+#photoDetail{
+    height: 130px;
+}
+
+#photoProfil{
+    height: 180px;
+    
+    float: left;
+    margin-right: 10px;
+}
+
+.tableVip{
+    width: 10%;
+    float: right;
+    margin-right: 150px;
+  }
+  
+  .tableVip table{
+    border-collapse: collapse;
+    border:solid 1px;
+    text-align: center;
+  }
+  
+  .tableVip th{
+    border:solid 1px;
+    background-color: black;
+    padding: 10px 75px 0px 75px;
+  }
+  
+  .tableVip a{
+    color:black;
+    text-decoration:underline;
+    font-weight: bold;
+    display:block;
+  }
+
+  .liste_lettre{
+    text-align: center;
+}
+
+/*****ARTICLE*****/
+
+  .article{
+    display: block;
+    width: 70%;
+    text-align: justify;
+    
+  }
+  .article .vipNom{
+    text-decoration: underline;
+  }
+
+  .article .bandeau{
+    background-color: darkgrey;
+  }
+
+  .article .bandeau a{
+    text-decoration: underline;
+    color: black;
+    float: right;
+  }
+  .article fieldset{
+    border:solid black 1px;
+  }
+
+
+/*****BULLE VIP*****/
+.bulle
+{
+  text-decoration:none;
+  position:relative;
+}
+
+
+.bulle span
+{
+  display:none;
+
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  color:black;
+  background:white;
+  font-weight: normal;
+  font-size: 11px;
+  text-align: justify;
+}
+
+
+.bulle span img
+{
+  float:left;
+  margin:0px 8px 8px 0;
+}
+
+.bulle img
+{
+height: 100px;
+}
+
+
+.bulle:hover span
+{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1000;
+  width:650px;
+  max-height:135px;
+  border:1px solid black;
+  margin-top:12px;
+  margin-left:32px;
+  overflow: scroll;
+  padding:8px;
+  
+}
+
+/*****ALBUM VIP*****/
+
+#comm{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.containerglob{
+  float: right;
+  margin-right: 150px;
+  width: 25%;
+}
+
+.album{
+  width: 80px;
+  height: 100px;;
+  margin-right: 15px;
+}
+
+#easyPaginate {
+  width: 400px;
+  border: solid black 1px;
+  padding: 5px;
+  text-align: center;
+}
+
+#easyPaginate a {
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+.first {
+  margin-right: 35px;
+  margin-left: -20px; color: black;
+  border: solid 1px;
+}
+
+.last{
+  margin-left: 30px; color: black;
+  border: solid 1px;
+}
+
+.prev{
+  margin-right: 15px; color: black;
+  border: solid 1px;
+}
+
+.next{
+  margin-left: 160px; color: black;
+  border: solid 1px;
+}
+
+.page{
+  display: none;
+}
+
+.divGlobComm{
+  border: solid 1px;
+  width: 50%;
+  
+}
+
+.np{
+  text-align: center;
+}
+
+#imgAlbum{
+  width: 150px;
+  height: 200px;
+  margin-left: 135px;
+}
+
+
+.easyPaginateNav {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.fieldset{
+  margin: 10px;
+  border:solid black 1px;
+}
+
+
+.fieldAlbAcc {
+  margin-right: 188px;
+}
